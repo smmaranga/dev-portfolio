@@ -102,6 +102,11 @@ p {
       blink-caret .75s step-end infinite;
 }
 
+.about p{
+    font-size: 15px;
+    text-shadow:1px 1px 10px #741f1f, 1px 1px 10px #2b0505;
+}
+
 .featured-image{
     object-fit: cover;
     border: solid 1px white;
@@ -113,7 +118,7 @@ p {
 }
 
 .about-text {
-    width: 300px;
+    width: 400px;
 }
 
 .projects-container::-webkit-scrollbar{
@@ -257,6 +262,17 @@ p {
     color:rgb(255, 239, 159);
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #212121;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #ff8462;
+}
 /* The typing effect */
 @keyframes typing {
     from { width: 0 }
