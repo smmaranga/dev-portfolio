@@ -5,7 +5,9 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #ffffff;
+    background-image: url("assets/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1 {
@@ -57,6 +59,11 @@ p {
     color: rgb(255, 247, 138)
 }
 
+.navlogo{
+    margin-right: 20px;
+    height: 20px;
+}
+
 .navlink {
     width: 200px;
     padding: 5px 5px 5px 10px;
@@ -84,13 +91,13 @@ p {
 }
 
 .about h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
     animation: 
-      typing 0.3s steps(30, end),
+      typing 0.8s steps(50, end),
       blink-caret .75s step-end infinite;
 }
 
@@ -170,6 +177,42 @@ p {
     background-color: #000000b7;
     border: solid 1px white;
     margin-bottom: 10px;
+    padding: 5px;
+}
+
+.skills-hobbies{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.skill-logo{
+    display: flex;
+}
+
+.skill-logo img{
+    margin: 5px;
+    transition: transform .5s;
+}
+
+.skill-logo img:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 0.75rem rgb(255, 122, 45));
+}
+
+.skills p{
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    width: fit-content;
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    margin: 20px 10px 10px 10px;
+    letter-spacing: .15em;
+    animation: 
+      typing 1.0s steps(50, end),
+      blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
