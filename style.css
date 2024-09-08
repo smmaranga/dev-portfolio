@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+h1 {
+    font-family: 'Jersey 10';
+    color: white;
+    letter-spacing: 5px;
+}
+
+p {
+    font-family: 'Inconsolata';
+    color: white;
+}
+
+.wholepage{
+    width: 900px;
+    background-color: #0c0c0c;
+    padding: 20px;
+    border-radius: 10px;
+    border: double 5px #ffffff;
+}
+
+.aboutme{
+    background-size: cover;
+    background-image: url('assets/featured.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    box-shadow: inset 0 0 50px 50px #0c0c0c;
+}
+
+.topnav {
+    display: flex;
+    font-family: 'Jersey 10';
+    font-size: 20px;
+}
+
+.topnav h1{
+    font-size: 20px;
+}
+
+.topnav a {
+    color: rgb(119, 28, 28);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.topnav a:hover {
+    color: rgb(255, 247, 138)
+}
+
+.navlink {
+    width: 200px;
+    padding: 5px 5px 5px 10px;
+    background-color: #f7845e;
+    border: solid 1px #812828;
+    box-shadow: inset -2px -2px 2px 1px #b83a3a;
+}
+
+.pagecontent {
+    margin: auto;
+    padding: 50px 10px 10px 20px;
+}
+
+.about-content {
+    display: flex;
+}
+
+.featured-image{
+    margin: auto 20px auto 10px;
+}
+
+.about {
+    top: 20%;
+    padding: 10px;
+}
+
+.about h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(255, 255, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 0.3s steps(30, end),
+      blink-caret .75s step-end infinite;
+}
+
+.featured-image{
+    object-fit: cover;
+    border: solid 1px white;
+    background-color: #2b2b2b77;
+}
+
+.about-heading{
+    width: fit-content;
+}
+
+.about-text {
+    width: 300px;
+}
+
+.projects-container::-webkit-scrollbar{
+    height: 10px;
+}
+
+.projects-container::-webkit-scrollbar-button{
+    height: 10px;
+    width: 10px;
+}
+
+.projects-container::-webkit-scrollbar-button:single-button:decrement{
+    background-image: url('assets/arrow-left.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.projects-container::-webkit-scrollbar-button:single-button:increment{
+    background-image: url('assets/arrow-right.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.projects-container::-webkit-scrollbar-track{
+    background-color: #0c0c0c00;
+}
+
+.projects-container::-webkit-scrollbar-thumb{
+    background-color: #ffffff17;
+}
+
+.projects-container{
+    overflow-x:auto;
+    display: flex;
+    text-align: center;
+}
+
+.project-content::-webkit-scrollbar{
+    width: 5px;
+}
+
+.project-content::-webkit-scrollbar-track{
+    background-color: #9595957b;
+}
+
+.project-content::-webkit-scrollbar-thumb{
+    background-color: #ff8462;
+}
+
+.project-content h2{
+    font-family: 'Pixelify Sans';
+    color: white;
+    font-size: 15px;
+}
+
+.project-content{
+    flex: 0 0 auto;
+    overflow-y: scroll;
+    margin-right: 5px;
+    width: 300px;
+    height: 80px;
+    background-color: #000000b7;
+    border: solid 1px white;
+    margin-bottom: 10px;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+}
