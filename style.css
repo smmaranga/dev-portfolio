@@ -284,3 +284,10 @@ p {
     from, to { border-color: transparent }
     50% { border-color: rgb(255, 255, 255); }
 }
+
+@media screen and (max-width: 768px){
+    .wholepage{
+        scale: 40%;
+        justify-content: center;
+    }
+}
