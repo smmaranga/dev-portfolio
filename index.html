@@ -5,93 +5,221 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="icon" type="image/x-icon" href="assets\star-icon.png">
         <title>Web Portfolio</title>
+        <!-- Add Tailwind CSS via CDN -->
+		<script src="https://cdn.tailwindcss.com"></script>
     </head>
 
     <body>
-        <div id="home" class="wholepage">
-            <div class="topnav">
-                <div class="navlogo"><img src="assets/personal-logo.png" height="80px"></div>
-                <div class="navlink"><a class="active" href="#home">▸ Home</a></div>
-                <div class="navlink"><a href="#about">▸ About</a></div>
-                <div class="navlink"><a href="#skills">▸ Skills</a></div>
-                <div class="navlink"><a href="#projects">▸ Projects</a></div>
-                <div class="navlink"><a href="#contact">▸ Contact</a></div>
+        <div id="home" class="wholepage min-h-screen relative mx-auto px-6 sm:px-12 lg:max-w-[70rem] xl:max-w-[76rem] 2xl:max-w-[92rem] text-white">
+            <div class="topnav flex items-center justify-between py-5">
+                <div class="navname"><h1 class="text-4xl font-extrabold text-white">smmaranga.</h1></div>
+                <div class="navlinks mt-4 flex h-screen max-h-0 w-full flex-col items-start text-sm opacity-0 md:mt-0 md:h-auto md:max-h-screen md:w-auto md:flex-row md:space-x-1 md:border-0 md:opacity-100">
+                    <div class="navlink block px-4 py-2 no-underline outline-none hover:no-underline"><a class="active" href="#home">Home</a></div>
+                    <div class="navlink block px-4 py-2 no-underline outline-none hover:no-underline"><a href="#about">About</a></div>
+                    <div class="navlink block px-4 py-2 no-underline outline-none hover:no-underline"><a href="#projects">Projects</a></div>
+                    <div class="navlink block px-4 py-2 no-underline outline-none hover:no-underline"><a href="#skills">Skills</a></div>
+                    <div class="navlink block px-4 py-2 no-underline outline-none hover:no-underline"><a href="#contact">Contact</a></div>
+                </div>
             </div>
-    
             <div class="pagecontent">
+                <section class="relative flex flex-col items-center justify-between py-4 lg:py-12">
+                    <div class="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
+                        <div class="order-2 lg:order-1 flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10 content-center">
+                            <h1 class="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
+                                Hello, 
+                                <br>
+                                This is 
+                                <span class="text-green-300">SHEILA</span>.
+                                <br>
+                                An aspiring
+                                <br>
+                                <span class="text-green-300">Frontend Developer</span>.
+                            </h1>
+                            <h2 class="font-medium text-2xl my-8">Welcome to my website!</h2>
+                            <div class="flex items-center gap-3">
+                                <a class="bg-gradient-to-r to-red-500 from-pink-950 p-[1px] rounded-full transition-all duration-300 hover:from-red-500 hover:to-pink-950" href="#contact">
+                                    <button class="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
+                                        <span>Contact me</span>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM20 17H24V19H20V17ZM17 12H24V14H17V12ZM19 7H24V9H19V7Z"></path>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <a class="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-red-500 to-pink-950 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold hover:from-pink-950 hover:to-red-500" role="button" target="_blank" href="https://drive.google.com/file/d/1-6gktcveSHrIMLj0WyapvBfpQeDhRjmQ/view?usp=sharing">
+                                    <span class="align-center">Get Resume</span>
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="order-1 lg:order-2">
+                            <img src="assets/feature-img.gif" class="object-auto h-auto">
+                        </div>
+                    </div>
+                </section>
                 <div class="aboutme">
-                    <div id="about" class="about-content">
-                        <div class="featured-image"><img src="assets\personal-icon.png" height="180px"></div>
-                        <div class="about">
-                            <div class="about-heading"><h1>Hello World!</h1></div>
-                            <div class="about-text"><p><b>Sheila Mae Maranga</b> is a graduating Computer Science student from the University of the Philippines Los Baños, specializing in frontend development and web design. Being both a developer and an artist, they have a keen eye for aesthetics, seamlessly integrating creativity and technology into their projects.</p></div>
+                    <div class="bg-gradient-to-r to-red-500 from-pink-950 p-[1px] rounded-2xl transition-all duration-300">
+                        <div id="about" class="about-content bg-[#0d1224] rounded-2xl border-none text-[#ffff] no-underline lg:flex">
+                            <div class="justify-center order-1 lg:order-1 lg:py-5 px-8">
+                                <img src="assets/recent_1x1.png" class="scale-75 rounded-2xl">
+                            </div>
+                            <div class="about order-2 lg:order-2 py-10 px-10 col-span-2">
+                                <div class="about-heading"><h1 class="text-4xl font-extrabold text-green-300 my-8">Hello World!</h1></div>
+                                <div class="about-text"><p>My name is <b>Sheila Mae Maranga</b>, a 3rd-year Computer Science student from the University of the Philippines Los Baños, specializing in frontend development and web design. Being both a developer and an artist, I have a keen eye for aesthetics, seamlessly integrating creativity and technology into my projects.</p></div>
+                            </div>
                         </div>
                     </div>
                     <div id="projects" class="projects">
-                        <h1>Projects</h1>
                         <div class="projects-container">
-                            <div class="project-content">
-                                <h2>Movie Booking System</h2>
-                                <p>A simple movie ticket booking system built in Python, designed to run in the terminal. It allows users to browse available movies, select showtimes, choose seats, and book tickets interactively through a command-line interface.</p>
+                            <div class="flex justify-center align-center relative">
+                                <div class="bg-gradient-to-r from-transparent via-red-500 to-transparent w-full h-[1px] absolute top-1/2 -translate-y-1/2 z-0"></div>
+                                <div class="p-[1px] bg-gradient-to-r from-transparent via-red-500 to-transparent w-fit my-8 relative z-10">
+                                    <div class="p-5 h-full w-fit rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 transition-all duration-500">
+                                        <h1 class="text-white font-bold text-2xl">PROJECTS</h1>
+                                    </div>
+                                </div>
                             </div>
                             <div class="project-content">
-                                <h2>Generic and Diet Problem Solvers</h2>
-                                <p>A project made in R that includes solving features for Polynomial Regression, Quadratic Spline Interpolation, and Linear Programming (Simplex Method).</p>
+                                <h2 class="text-xl text-green-300 font-semibold">Movie Booking System</h2>
+                                <p class="text-sm text-yellow-300"><i>Python</i></p>
+                                <p>This Python-based movie ticket booking system, developed as a requirement for CMSC 12, runs in the terminal and allows users to browse movies, select showtimes, choose seats, and book tickets through an interactive command-line interface. It showcases fundamental programming concepts and user interaction in Python.</p>
+                            </div>
+                            <div class="flex justify-center -translate-y-[1px] my-3">
+                                <div class="w-3/4">
+                                    <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full">
+                                    </div>
+                                </div>
                             </div>
                             <div class="project-content">
-                                <h2>EnlistMe! Isko vs Iska</h2>
-                                <p>A two-player shooting game made in Java to apply the principles of Object-Oriented Programming (OOP).</p>
+                                <h2 class="text-xl text-green-300 font-semibold">Generic and Diet Problem Solvers</h2>
+                                <p class="text-sm text-yellow-300"><i>R</i></p>
+                                <p>An R-based project, developed as a requirement for CMSC 150, features solutions for Polynomial Regression, Quadratic Spline Interpolation, and Linear Programming (Simplex Method). It demonstrates key mathematical modeling and optimization techniques, applying computational methods to solve numerical problems efficiently.</p>
+                            </div>
+                            <div class="flex justify-center -translate-y-[1px] my-5">
+                                <div class="w-3/4">
+                                    <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full">
+                                    </div>
+                                </div>
                             </div>
                             <div class="project-content">
-                                <h2>Friendbook.</h2>
-                                <p>A mobile application developed in Flutter. It is a slambook app that allows users to create their own account and add or record their friends by filling out the slambook form or by scanning a QR code.</p>
+                                <h2 class="text-xl text-green-300 font-semibold">EnlistMe! Isko vs Iska</h2>
+                                <p class="text-sm text-yellow-300"><i>Java</i></p>
+                                <p>EnlistMe! Isko vs Iska is a Java-based two-player shooting game developed as a requirement for CMSC 22, designed to apply Object-Oriented Programming (OOP) principles. Played on a single PC, players compete by shooting each other to gain points from power-ups while also decreasing their opponent’s score. Simple yet competitive, the game showcases fundamental OOP concepts in an engaging and interactive way.</p>
+                            </div>
+                            <div class="flex justify-center -translate-y-[1px] my-5">
+                                <div class="w-3/4">
+                                    <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full">
+                                    </div>
+                                </div>
                             </div>
                             <div class="project-content">
-                                <h2>Neo Armstrong Cyclone Jet Armstrong Cannon</h2>
-                                <p>A group effort to create a remote-controlled robot for Tagisang Robotics back in 2019. The robot was coded using Arduino. One of its features include gathering Takraw balls with its ziptie whiskers and shooting/throwing it.</p>
+                                <h2 class="text-xl text-green-300 font-semibold">Friendbook.</h2>
+                                <p class="text-sm text-yellow-300"><i>Dart, Flutter</i></p>
+                                <p>Friendbook is a Flutter-based mobile app developed as a requirement for CMSC 23, modernizing the classic slambook experience. Users can create accounts, add friends by filling out a digital slambook form, or scan QR codes for quick connections. Serving as a personalized digital keepsake, it blends nostalgia with technology while applying key mobile app development concepts.</p>
+                            </div>
+                            <div class="flex justify-center -translate-y-[1px] my-5">
+                                <div class="w-3/4">
+                                    <div class="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent w-full">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <h2 class="text-xl text-green-300 font-semibold">AgriLink</h2>
+                                <p class="text-sm text-yellow-300"><i>JavaScript, ReactJS, Tailwind CSS, HTML</i></p>
+                                <p>AgriLink is a farm-to-table website developed as an academic requirement for CMSC 100. It streamlines the process of connecting local farmers with consumers, ensuring fresh, high-quality produce is easily accessible. The platform features a dual-interface system, catering to both customers and administrators for a seamless ordering experience.</p>
+                            </div>
+                            <div class="screenshots flex grid grid-cols-1 lg:grid-cols-3 gap:3 my-5">
+                                <img src="assets/agrilink1.jpg" class="scale-[95%]">
+                                <img src="assets/agrilink3.jpg" class="scale-[95%]">
+                                <img src="assets/agrilink5.jpg" class="scale-[95%]">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="skills-container">
+                <div class="relative">
+                    <div class="bg-gradient-to-r from-transparent via-red-500 to-transparent w-full h-[1px] absolute top-1/2 -translate-y-1/2 z-0"></div>
+                    <div class="p-[1px] bg-gradient-to-r from-transparent via-red-500 to-transparent w-fit my-8 relative z-10">
+                        <div class="p-5 h-full w-fit rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50 transition-all duration-500">
+                            <h1 class="text-white font-bold text-2xl">SKILLS</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container my-10 overflow-hidden relative">
                     <div id="skills" class="skills">
-                        <h1>Skills</h1>
-                        <div class="skill-logo">
-                            <img src="assets/python.png" height="40px">
-                            <img src="assets/C.png" height="40px">
-                            <img src="assets/C++.png" height="40px">
-                            <img src="assets/R.png" height="40px">
-                            <img src="assets/java.png" height="40px">
-                            <img src="assets/flutter.png" height="40px">
+                        <div class="skill-logo flex w-max animate-scroll hover:animate-pause">
+                            <!-- Duplicated Skills List for Seamless Scrolling -->
+                            <div class="flex">
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/python.png" height="40px">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/C.png" height="40px">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/R.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/java.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/flutter.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/javascript.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/html.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/css.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/arduino.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/figma.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/canva.png">
+                                    </div>
+                                </div>
+                                <div class="logo h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 rounded-lg group relative cursor-pointer p-[1px] bg-gradient-to-r from-transparent via-red-300 to-transparent">
+                                    <div class="p-5 h-full w-full rounded-lg border border-[#1f223c] bg-[#11152c] shadow-none shadow-gray-50">
+                                        <img src="assets/photoshop.png">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill-logo">
-                            <img src="assets/arduino.png" height="40px">
-                            <img src="assets/html.png" height="40px">
-                            <img src="assets/css.png" height="40px">
-                            <img src="assets/canva.png" height="40px">
-                            <img src="assets/photoshop.png" height="40px">
-                            <img src="assets/illustrator.png" height="40px">
-                        </div>
-                        <p>Currently learning...</p>
-                        <div class="skill-logo">
-                            <img src="assets/figma.png" height="40px">
-                            <img src="assets/unity.png" height="40px">
-                            <img src="assets/blender.png" height="40px">
-                            <img src="assets/aftereffects.png" height="40px">
-                        </div>
-                    </div>
-                    <div class="filler">
-                        <img src="assets/featured2.gif">
                     </div>
                 </div>
-            </div>
             <footer>
-                <hr style="margin-bottom: 20px;">
-                <div id="contact" class="contacts">
+                <div class="h-[1px] bg-gradient-to-r from-transparent via-red-500 to-transparent w-full">
+                </div>
+                <div id="contact" class="contacts my-10 text-xs text-center">
                     <div class="contact-details">
                         <p>Pasig City, Philippines</p>
                         <p><a href="mailto:smmaranga@up.edu.ph">smmaranga@up.edu.ph</a> | <b>(0928) 280 2263</b></p>
-                        <p>© 2024 ALL RIGHTS RESERVED</p>
+                        <p>© 2025 ALL RIGHTS RESERVED</p>
                         <p style="margin-top: 10px;"><a href="#home"><b>Back to Top</b></a></p>
                     </div>
                 </div>

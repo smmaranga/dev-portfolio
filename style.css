@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    align-items: center;
+    background: rgb(108,25,25);
+    background: linear-gradient(204deg, rgba(108,25,25,1) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(122,0,71,1) 100%);
+}
+
+* {
+    font-family: 'Poppins';
+}
+
+.navlinks {
+    display: flex;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-logo{
+    display: flex;
+}
+
+.skill-logo img{
+    margin: 10px;
+    transition: transform .5s;
+    height: 60px;
+}
+
+.skill-logo .logo:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 0.75rem rgba(188, 157, 255, 0.449));
+}
+
+.skill-logo img:hover{
+    filter: drop-shadow(0 0 0.75rem rgba(46, 9, 132, 0.801));
+}
+
+.terminal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.terminal.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+/* Infinite scrolling animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Apply animation to the scrolling container */
+.animate-scroll {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+/* Pause animation on hover */
+.animate-scroll:hover {
+    animation-play-state: paused;
+}
